@@ -1,0 +1,12 @@
+h1 {
+    color: blue;
+}
+
+.btn {
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+ body {
+     background-color: gray;
+ }
