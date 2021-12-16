@@ -1,12 +1,83 @@
 h1 {
-    color: blue;
+    color: goldenrod;
+    font-family: Smokum, Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
-.btn {
-    color: var(--btnFontColor);
-    background-color: var(--btnBg);
+.button {
+    display: block;
+    border-radius: 4px;
+    background-color: goldenrod;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+    width: 100px;
+    margin: auto;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 40px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+body {
+    background-image: url("kgr_bg.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: top;
+    background-color: rgb(0,142,124);
 }
 
- body {
-     background-color: gray;
- }
+#rolls {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    text-align: center;
+    width: 25%;
+}
+
+#score {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 28px;
+  text-align: center;
+}
+
+#explanation {
+  font-family: Smokum, Georgia, 'Times New Roman', Times, serif;
+  color: goldenrod;
+  text-align: center;
+  font-size: 16px;
+}
+
+#roll_text, #score_text, #flavor_text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 30px;
+}
+

@@ -3,16 +3,60 @@
         <head>
             <meta charset="utf-8">
             <link rel="stylesheet" href="main.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Smokum">
             <script src="app.js"></script>
             <noscript>Please enable JavaScript to access the full functionality of this site!</noscript>
-            <h1>Welcome to Klondike Gold Rush</h1>
         </head>
         <body>
-            <p>Roll Dice and Collect Points!</p>
+            <h1>Welcome to Klondike Gold Rush</h1>
+            <p id=explanation>Roll Dice and Collect Points!</p>
             <div>
                 <button class="button" onclick="calculateScore()">Roll Dice</button>
             </div>
-            <p id="rolls"></p> 
+            <p id="roll_text"></p>
+            <table id="rolls">
+                <tr>
+                    <td id="r0"></td>
+                    <td id="r1"></td>
+                    <td id="r2"></td>
+                    <td id="r3"></td>
+                    <td id="r4"></td>
+                </tr>
+            </table> 
+            <p id="score_text"></p>
             <p id="score"></p> 
+            <p id="flavor_text"></p>
+            <!--<table id="leaderboard">
+                <tr>
+                    <th>Rank</th>
+                    <th>Score</th>
+                    <th>Name</th>
+                </tr>
+                <tr>
+                    <td id="w0.0"></td>
+                    <td id="w0.1"></td>
+                    <td id="w0.2"></td>
+                </tr>
+                <tr>
+                    <td id="w1.0"></td>
+                    <td id="w1.1"></td>
+                    <td id="w1.2"></td>
+                </tr>
+                <tr>
+                    <td id="w2.0"></td>
+                    <td id="w2.1"></td>
+                    <td id="w2.2"></td>
+                </tr>
+                <tr>
+                    <td id="w3.0"></td>
+                    <td id="w3.1"></td>
+                    <td id="w3.2"></td>
+                </tr>
+                <tr>
+                    <td id="w4.0"></td>
+                    <td id="w4.1"></td>
+                    <td id="w4.2"></td>
+                </tr>
+            </table> -->
         </body>
     </html>
