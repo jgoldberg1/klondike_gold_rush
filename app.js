@@ -68,13 +68,14 @@ function pickFlavorText(score) {
         "You found gold dust!",
         "Just sand and gravel. Better luck next time!"
     ];
-    if (score >= 1000) {
+    var scoreInterval = [1000, 200, 0];
+    if (score >= scoreInterval[0]) {
         document.getElementById("flavor_text").innerHTML = flavorText[0];
     }
-    else if (score < 1200 && score >= 200) {
+    else if (score < scoreInterval[0] && score >= scoreInterval[1]) {
         document.getElementById("flavor_text").innerHTML = flavorText[1];
     }
-    else if (score < 200 && score > 0) {
+    else if (score < scoreInterval[1] && score > scoreInterval[2]) {
         document.getElementById("flavor_text").innerHTML = flavorText[2];
     }
     else {

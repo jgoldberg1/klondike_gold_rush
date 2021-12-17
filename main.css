@@ -1,3 +1,19 @@
+.center {
+  background-color: rgb(255,255,255, .70);
+  border-radius: 10px;
+}
+
+.column {
+  float: left;
+  width: 33.33%
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 h1 {
     color: goldenrod;
     font-family: Smokum, Georgia, 'Times New Roman', Times, serif;
@@ -6,7 +22,6 @@ h1 {
 
 .button {
     display: block;
-    border-radius: 4px;
     background-color: goldenrod;
     border: none;
     color: #FFFFFF;
@@ -15,35 +30,9 @@ h1 {
     padding: 20px;
     width: 100px;
     margin: auto;
-    transition: all 0.5s;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 40px;
-  }
-  
-  .button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  
-  .button:hover span {
-    padding-right: 25px;
-  }
-  
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
   }
   
 body {
@@ -58,7 +47,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: auto;
     text-align: center;
-    width: 25%;
+    width: 50%;
 }
 
 #score {
@@ -79,5 +68,40 @@ body {
   text-align: center;
   font-size: 16px;
   margin-top: 30px;
+}
+
+.rules_dropdown {
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  background-color: goldenrod;
+  color: white;
+  width: 50%;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  position: relative;
+}
+
+.rules_dropdown_content {
+  display: none;
+  text-align: left;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  position: absolute;
+  background-color: rgb(255,255,255, .70);
+  color: black;
+  width: 100%;
+  overflow: auto;
+  margin:auto;
+  
+}
+
+.rules_dropdown:hover .rules_dropdown_content {
+  display: block;
 }
 

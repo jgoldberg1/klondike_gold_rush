@@ -8,24 +8,49 @@
             <noscript>Please enable JavaScript to access the full functionality of this site!</noscript>
         </head>
         <body>
-            <h1>Welcome to Klondike Gold Rush</h1>
-            <p id=explanation>Roll Dice and Collect Points!</p>
-            <div>
-                <button class="button" onclick="calculateScore()">Roll Dice</button>
+            <div class="row">
+                <h1>Welcome to Klondike Gold Rush</h1>
+                <div class="column">
+                    <div class="rules_dropdown">
+                        <p>Hover here to see the rules of the game!</p>  
+                        <div class="rules_dropdown_content">
+                            <p>Points are awarded for the following rolls:</p>
+                            <ul>
+                                <li>Triple 1s: 1000 points</li>
+                                <li>Triple 2s: 200 points</li>
+                                <li>Triple 3s: 300 points</li>
+                                <li>Triple 4s: 400 points</li>
+                                <li>Triple 5s: 500 points</li>
+                                <li>Triple 6s: 600 points</li>
+                                <li>Single 1s: 100 points</li>
+                                <li>Single 5s: 50 points</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column center">
+                    <!--<div class="center"> -->
+                        <p id=explanation>Roll Dice and Collect Points!</p>
+                        <div>
+                            <button class="button" onclick="calculateScore()">Roll Dice</button>
+                        </div>
+                        <p id="roll_text"></p>
+                        <table id="rolls">
+                            <tr>
+                                <td id="r0"></td>
+                                <td id="r1"></td>
+                                <td id="r2"></td>
+                                <td id="r3"></td>
+                                <td id="r4"></td>
+                            </tr>
+                        </table> 
+                        <p id="score_text"></p>
+                        <p id="score"></p> 
+                        <p id="flavor_text"></p>
+                    <!--</div> -->
+                </div>
             </div>
-            <p id="roll_text"></p>
-            <table id="rolls">
-                <tr>
-                    <td id="r0"></td>
-                    <td id="r1"></td>
-                    <td id="r2"></td>
-                    <td id="r3"></td>
-                    <td id="r4"></td>
-                </tr>
-            </table> 
-            <p id="score_text"></p>
-            <p id="score"></p> 
-            <p id="flavor_text"></p>
             <!--<table id="leaderboard">
                 <tr>
                     <th>Rank</th>
